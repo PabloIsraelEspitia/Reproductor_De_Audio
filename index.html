@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupidfy</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fa-brands fa-spotify"></i>
+            <h4>Stupidfy</h4>
+        </div>
+        <div class="options__menu">	
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" title="Buscar"></i>
+                    <h4>Buscar</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-download"></i>
+                    <h4>Descargas</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-heart" title="Favoritas"></i>
+                    <h4>Favoritas</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-compact-disc" title="Albums"></i>
+                    <h4>Albums</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-user" title="Cuenta"></i>
+                    <h4>Cuenta</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="player">
+        <div class="player__controls">
+            <div class="player__btn player__btn--small" id="previous"></div>
+            <div class="player__btn player__btn--small" id="icon-menu"></div>
+        </div>
+          <div class="player__album">
+            <img src="tocadiscos.gif" alt="Album Cover" class="player__img" loading="lazy" />
+          </div>
+          <h2 class="player__artist">Luis Angel "El Flaco"</h2>
+     <h3 class="player__song">Y Si Se Quiere Ir</h3>
+
+     <input type="range" value="20" min="0" class="player__level" id="range" />
+     <div class="audio-duration">
+       <div class="start">00:01</div>
+       <div class="end">03:07</div>
+     </div>
+
+     <audio class="player__audio" controls id="audio">
+       <source src="y2mate.com - Y Si Se Quiere Ir  Luis Angel El Flaco_320kbps.mp3" type="audio/mpeg" />
+     </audio>
+
+     <div class="player__controls">
+       <div class="player__btn player__btn--medium" id="backward">
+         <i class="fas fa-backward"></i>
+       </div>
+
+       <div class="player__btn player__btn--medium blue play" id="play">
+         <i class="fas fa-play play-btn"></i>
+         <i class="fas fa-pause pause-btn hide"></i>
+       </div>
+
+       <div class="player__btn player__btn--medium" id="forward">
+         <i class="fas fa-forward"></i>
+       </div>
+     </div>
+
+     <!-- iconos de la cancion  -->
+    <div class="iconos_cancion">
+        <div class="icon_cancion">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="icon_cancion">
+            <i class="fa-solid  fa-volume-high"></i>
+        </div>
+        <div class="icon_cancion">
+            <i class="fa-solid fa-download"></i>
+        </div>
+    </div>
+    <div class="icon_micro">
+        <i class="fa-solid fa-microphone"></i>
+    </div>
+
+   </div>
+ </div>
+     
+    <script src="script.js"></script>
+</body>
+</html>
